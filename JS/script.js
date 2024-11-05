@@ -748,7 +748,7 @@ function randomNumber(min = 0, max = 100) {
 // Обработчик для кнопки "Автор"
 if (authorButton) {
   authorButton.addEventListener('click', () => {
-    window.location.href = 'HTML/second-html-page.html';
+    window.location.href = 'second-html-page.html';
   });
 }
 
