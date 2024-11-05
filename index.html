@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <title>Fast-Typer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div id="modal" class="modal hidden">
+          <div class="modal-content">
+            <p class="modal-text"></p>
+            <button class="close-btn2">Close</button>
+          </div>
+        </div>
+        <div class="action"></div>
+        <div class="counts">
+          <span class="right-counts" value="0">0</span>
+          <span class="wrong-counts">0</span>
+        </div>
+        <div class="inputs">
+          <div>
+            <h1 id="low" class="input">Easy</h1>
+            <input value="0" id="low" class="input" type="checkbox" />
+          </div>
+          <div>
+            <h1 id="med" class="input">Med</h1>
+            <input value="1" id="med" class="input" type="checkbox" />
+          </div>
+          <div>
+            <h1 id="high" class="input">Hard</h1>
+            <input value="2" id="high" class="input" type="checkbox" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="start-button">Start</button>
+          <button id="restart">Restart</button>
+        </div>
+      </div>
+      <div class="description">
+        <div>
+          <button class="description-button">Description</button>
+          <ul class="list">
+            <li>”Use English Keyboard”</li>
+            <li>“If you mistype, press space to erase the mistake.”</li>
+          </ul>
+        </div>
+        <div>
+          <button id="author-button">Author</button>
+        </div>
+      </div>
+      <audio id="keyboard" src="/Sound/Keyboard-Sound.MP3"></audio>
+      <audio id="right" src="/Sound/Right-Sound.mp3"></audio>
+      <audio id="wrong" src="/Sound/Wrong-Sound.mp3"></audio>
+      <audio id="fiasco" src="/Sound/fiasco-154915.mp3"></audio>
+      <audio id="win" src="/Sound/success-1-6297.mp3"></audio>
+    </div>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

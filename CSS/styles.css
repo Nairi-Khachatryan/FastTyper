@@ -1,0 +1,207 @@
+body {
+  background-color: black;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.counts {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: wheat;
+  padding: -1px;
+  margin: -1px;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  font-size: 2rem;
+}
+
+.main {
+  margin: 0px;
+  padding-right: 0px;
+  background-color: #005480;
+  width: 1100px;
+  height: 100vh;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  width: 200px;
+  height: 200px;
+  font-size: 1rem;
+}
+#author-button {
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
+}
+.inputs input {
+  margin: 5px;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+}
+button {
+  font-size: 2rem;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: chocolate;
+  color: azure;
+  width: 170px;
+  overflow-wrap: unset;
+  border: none;
+}
+#start-button {
+  border: solid 1px, wheat;
+}
+#restart {
+  border: solid 1px wheat;
+}
+button:hover {
+  color: black;
+  border-radius: 22px;
+  animation: bubble 0.5s ease-out;
+}
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+button:active {
+  background-color: black;
+  color: white;
+  font: bold;
+}
+.right-counts {
+  color: rgb(59, 236, 59);
+  background-color: black;
+  margin: -17px;
+  font: bold;
+  width: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #3bd21e;
+}
+.wrong-counts {
+  background-color: black;
+  margin: 20px;
+  color: red;
+  font: bold;
+  width: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px red;
+}
+
+@keyframes fall {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+.falling-word {
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  animation: fall 7s linear forwards;
+}
+h1 {
+  margin: 10px;
+  padding: 5px;
+  color: rgb(245, 123, 36);
+  border: solid 2px, rgb(245, 123, 36);
+  border-radius: 10px;
+  background-color: black;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  top: 200px;
+  color: red;
+  font-size: 2rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
+  z-index: 1000; /* Высокий приоритет */
+}
+.modal-content {
+  padding: 15px;
+  position: fixed;
+  top: 318px;
+  left: 530px;
+  font-size: 2.5rem;
+  color: rgb(212, 58, 58);
+  background-color: rgb(205, 208, 210);
+  border-radius: 15px;
+  font: bold;
+  display: flex;
+}
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 31px;
+  text-align: center;
+}
+
+.right {
+  color: green;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.wrong {
+  font-size: 1.9rem;
+  color: red;
+  font-weight: bold;
+}
