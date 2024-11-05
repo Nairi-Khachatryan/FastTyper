@@ -524,7 +524,7 @@ const emptyTypedWord = () => (typedWord = '');
 // Return to the Main Page
 if (homeButton) {
   homeButton.addEventListener('click', () => {
-    window.location.href = '../index.html';
+    window.location.href = 'index.html';
   });
 }
 
